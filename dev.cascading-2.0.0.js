@@ -1,8 +1,4 @@
-//METODO PARA CHAMAR WEBMETHODS
-// 1. CRIAR WEB METHOD, RETORNANDO OBJETO DESEJADO
-// [WebMethod]
-// public static object Get()
-function executeWebMethod(methodName, parameters, sucessFunction, errorFunction) {
+﻿function executeWebMethod(methodName, parameters, sucessFunction, errorFunction) {
   $.ajax({
     type: "POST",
     url: methodName,
